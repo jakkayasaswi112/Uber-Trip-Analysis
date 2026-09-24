@@ -28,8 +28,17 @@ I tried these models:
 
 I compared the models using MAE, RMSE and R² score.
 
-## Result
-From the models I tested, Random Forest gave better results compared with Linear Regression and Decision Tree.
+## Dataset
+
+The project uses Uber pickup data from April to September 2014.
+
+The dataset files are stored in the `data` folder.
+
+## Model
+
+The trained weekly trip prediction model is saved in:
+
+`models/uber_weekly_prediction_model.pkl`
 
 ## Project Files
 - `Uber_Trip_Analysis.ipynb` - Main notebook
@@ -37,3 +46,6 @@ From the models I tested, Random Forest gave better results compared with Linear
 
 ## About
 This is a learning project where I practiced data analysis and basic machine learning using a real-world dataset.
+
+## Result
+From the models I tested, Random Forest gave better results compared with Linear Regression and Decision Tree.
