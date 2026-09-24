@@ -1,64 +1,39 @@
-# Uber Trip Analysis & Weekly Trip Prediction
+# Uber Trip Analysis
 
-A Python-based data analysis and machine learning project that analyzes Uber pickup patterns and predicts weekly trip demand using real-world Uber pickup data.
+This project is about analyzing Uber trip data using Python.
+I worked with the trip dataset to understand when Uber trips are more common. I checked the trips based on date, time and day.
 
-## Technologies Used
+## What I did
+- Checked and cleaned the dataset
+- Analyzed trips by hour
+- Analyzed trips by day
+- Found the peak hour
+- Checked weekly trip patterns
+- Used graphs to understand the data
+- Tried different machine learning models for prediction
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Scikit-learn
-* Joblib
-* Jupyter Notebook
-
-## Project Highlights
-
-* Analyzed Uber pickup data from April to September 2014
-* Performed exploratory data analysis on hourly, daily, weekday and weekly trip patterns
-* Identified peak trip hours and busiest days
-* Built a Linear Regression model for weekly trip prediction
-* Evaluated the model using MAE, RMSE and R² Score
-* Saved the trained model using Joblib
-* Generated a weekly demand prediction for the next week in the project dataset
+## Tools Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Scikit-learn
+- Jupyter Notebook
 
 ## Machine Learning
+I tried these models:
+- Linear Regression
+- Decision Tree
+- Random Forest
 
-A Linear Regression model was trained using chronological weekly trip data.
+I compared the models using MAE, RMSE and R² score.
 
-**Evaluation Metrics:**
+## Result
+From the models I tested, Random Forest gave better results compared with Linear Regression and Decision Tree.
 
-* MAE: 25,544.26
-* RMSE: 27,032.59
-* R² Score: 0.1383
+## Project Files
+- `Uber_Trip_Analysis.ipynb` - Main notebook
+- `data` - Dataset used for analysis
 
-The model predicted approximately **222,841 trips** for the next week in the project dataset.
-
-## Project Structure
-
-```text
-Uber-Trip-Analysis/
-├── data/
-├── models/
-│   └── uber_weekly_prediction_model.pkl
-├── notebooks/
-│   └── uber_trip_analysis.ipynb
-├── .gitignore
-├── requirements.txt
-└── README.md
-```
-
-## Dataset
-
-The project uses the FiveThirtyEight Uber TLC FOIL Response dataset containing Uber pickup records from April–September 2014.
-
-The raw CSV files are kept locally and excluded from this repository using `.gitignore`.
-
- ## Future Improvements :
-
-* Add more time-based features
-* Compare additional machine learning models
-* Improve prediction accuracy
-* Add interactive visualizations
-* Build a simple web interface for prediction
+## About
+This is a learning project where I practiced data analysis and basic machine learning using a real-world dataset.
